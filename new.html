@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/PCCOE.png" alt="Left Logo" class="logo left-logo">
+            <h1>E-Waste Management System</h1>
+            <img src="images/a72cfac1165c3d67b57e5bbee93ad550.jpg" alt="Right Logo" class="logo right-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+                <li><a href="#theory">Theory</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+<section id="home">
+    <h2>Welcome to the Future of E-Waste Recycling</h2>
+    <p>Help reduce e-waste by scheduling pickups and contributing to the circular economy. Every small step makes a difference.</p>
+    <button onclick="startNow()">Schedule Pickup</button>
+    <button id="startNowButton" onclick="startNow()">Start Now</button>
+</section>
+
+
+    <!-- About Section -->
+<section id="about">
+    <h2>About Our E-Waste Management Platform</h2>
+    <p>Our platform is designed to tackle the growing global problem of electronic waste (e-waste). We provide a convenient solution for individuals and businesses to responsibly dispose of their electronic devices, preventing harmful materials from entering landfills and contributing to environmental degradation.</p>
+    
+    <h3>Our Mission</h3>
+    <p>We are committed to reducing the environmental impact of e-waste through sustainable practices. Our goal is to promote the recycling, refurbishment, and reuse of electronic products, minimizing the need for new raw materials and supporting a circular economy. By raising awareness and offering easy-to-use services, we aim to make e-waste disposal accessible to everyone.</p>
+    
+    <h3>Why E-Waste Management Matters</h3>
+    <p>Electronic waste is the fastest-growing waste stream globally, and it poses a serious threat to both the environment and human health. E-waste contains toxic materials such as lead, mercury, and cadmium, which can leach into soil and water sources when improperly disposed of. Recycling and properly handling e-waste not only helps prevent environmental contamination but also allows for the recovery of valuable resources such as gold, silver, copper, and rare earth elements.</p>
+
+    <h3>How We Help</h3>
+    <ul>
+        <li><strong>Convenient Pickup Services:</strong> Our platform allows users to schedule e-waste pickups from their homes or offices, making it easy to dispose of old electronics without leaving your location.</li>
+        <li><strong>Drop-Off Locations:</strong> We provide information on nearby e-waste collection points for those who prefer to drop off their devices for recycling.</li>
+        <li><strong>Real-Time Tracking:</strong> Users can track the amount of e-waste they have contributed and see how their actions are helping reduce global e-waste.</li>
+        <li><strong>Rewards and Incentives:</strong> We encourage responsible e-waste disposal by offering rewards that can be redeemed for discounts, cashback, or other incentives.</li>
+    </ul>
+
+    <h3>Our Vision</h3>
+    <p>We envision a world where e-waste is no longer a burden on the environment. By integrating sustainable e-waste management practices into everyday life, we believe we can drive significant change towards a greener future. We aim to build a global community that is informed, responsible, and proactive about e-waste, ensuring that every electronic device is either reused, refurbished, or recycled.</p>
+</section>
+
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature">
+            <h3>Schedule E-Waste Pickup</h3>
+            <p>We offer door-to-door pickup services for your old electronic devices. Schedule a pickup in minutes!</p>
+            <button onclick="openForm()">Schedule Now</button>
+        </div>
+        <div class="feature">
+            <h3>Find Nearby Drop-Off Locations</h3>
+            <p>Locate the nearest drop-off point for your e-waste.</p>
+        </div>
+        <div class="feature">
+            <h3>Real-Time Recycling Data</h3>
+            <p>Track how much e-waste has been collected and recycled through our system.</p>
+        </div>
+    </section>
+
+    <!-- <section id="pdf-section">
+        <h2 class="collapsible-header" onclick="togglePDF()">View E-Waste PDF Details</h2>
+        <div id="pdfContent" class="collapsible-content">
+            <embed src="/mnt/data/ewaste.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+    </section> -->
+
+    <!-- Rewards Section -->
+    <section id="rewards">
+        <h2>Earn Rewards for Recycling</h2>
+        <p>Get rewarded for your efforts! Recycle your e-waste and earn points that can be redeemed for discounts or cashback.</p>
+    </section>
+
+    <!-- Theory Section -->
+<section id="theory">
+    <h2>Understanding E-Waste and the Circular Economy</h2>
+
+    <!-- E-Waste Definition -->
+    <div class="collapsible">
+        <h3 class="collapsible-header">What is E-Waste?</h3>
+        <div class="collapsible-content">
+            <p>E-Waste, or electronic waste, refers to discarded electrical or electronic devices. This includes old computers, mobile phones, televisions, refrigerators, and other devices that have reached the end of their useful life. If improperly disposed of, e-waste can be harmful to the environment due to the presence of toxic substances like lead, mercury, and cadmium.</p>
+        </div>
+    </div>
+
+    <!-- Importance of E-Waste Recycling -->
+    <div class="collapsible">
+        <h3 class="collapsible-header">The Importance of E-Waste Recycling</h3>
+        <div class="collapsible-content">
+            <p>Recycling e-waste is critical for several reasons:</p>
+            <ul>
+                <li><strong>Environmental Protection:</strong> E-waste often contains hazardous materials that, if improperly disposed of, can harm ecosystems and human health. Recycling ensures these toxic substances are handled responsibly.</li>
+                <li><strong>Resource Conservation:</strong> Many electronic devices contain precious metals like gold, silver, and copper, which can be recovered and reused, reducing the need for mining new materials.</li>
+                <li><strong>Waste Reduction:</strong> By recycling e-waste, we reduce the volume of waste going to landfills, conserving space and reducing pollution.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Circular Economy Concept -->
+    <div class="collapsible">
+        <h3 class="collapsible-header">Understanding the Circular Economy</h3>
+        <div class="collapsible-content">
+            <p>The circular economy is an economic model that aims to minimize waste and make the most of resources. In contrast to the traditional linear economy—which follows a 'take, make, dispose' model—the circular economy encourages reusing, repairing, refurbishing, and recycling existing materials and products. This approach helps to extend the life cycle of products and reduce environmental impact.</p>
+        </div>
+    </div>
+
+    <!-- E-Waste in the Circular Economy -->
+    <div class="collapsible">
+        <h3 class="collapsible-header">How E-Waste Fits into the Circular Economy</h3>
+        <div class="collapsible-content">
+            <p>In the circular economy model, e-waste plays a crucial role in promoting sustainability:</p>
+            <ul>
+                <li><strong>Recycling Materials:</strong> E-waste contains valuable materials that can be recovered and reintroduced into the manufacturing process.</li>
+                <li><strong>Refurbishment and Reuse:</strong> Many electronic devices can be repaired and reused, extending their lifespan and reducing the need for new products.</li>
+                <li><strong>Reducing Resource Extraction:</strong> By recycling and reusing materials, we reduce the demand for extracting new raw materials from the Earth, helping to conserve natural resources.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Global E-Waste Statistics -->
+    <div class="collapsible">
+        <h3 class="collapsible-header">Global E-Waste Statistics</h3>
+        <div class="collapsible-content">
+            <p>According to the Global E-Waste Monitor, the world generated approximately 53.6 million metric tons of e-waste in 2019. This number is expected to increase as more people use electronic devices. However, only 17.4% of this waste was properly recycled, highlighting the need for better e-waste management systems worldwide.</p>
+        </div>
+    </div>
+</section>
+
+<section id="ewaste-definition">
+    <h2>What is E-Waste?</h2>
+    <p>E-waste refers to electronic products that are no longer wanted or are at the end of their life cycle. This includes devices such as computers, smartphones, TVs, and refrigerators.</p>
+    <p>Did you know that around 53.6 million metric tons of e-waste were generated globally in 2019? This number is expected to reach 74.7 million metric tons by 2030.</p>
+</section>
+
+<section id="environment-impact">
+    <h2>Impact of E-Waste on the Environment</h2>
+    <p>Improper disposal of e-waste can lead to pollution and health hazards due to toxic components like lead and mercury. These materials can contaminate soil and water sources, posing risks to communities.</p>
+</section>
+
+<section id="recycling-benefits">
+    <h2>Benefits of E-Waste Recycling</h2>
+    <p>Recycling e-waste can recover valuable materials, such as gold, silver, copper, and rare earth metals, reducing the need for mining. It also saves energy and reduces greenhouse gas emissions compared to manufacturing new products from raw materials.</p>
+</section>
+
+<section id="disposal-tips">
+    <h2>How to Properly Dispose of E-Waste</h2>
+    <ul>
+        <li>Find local e-waste recycling centers or collection events.</li>
+        <li>Check if manufacturers offer take-back programs for their products.</li>
+    </ul>
+</section>
+
+<section id="your-role">
+    <h2>Your Role in E-Waste Management</h2>
+    <p>Become aware of your e-waste and its impact. Consider repairing, donating, or recycling your old electronics instead of throwing them away.</p>
+</section>
+
+<section id="case-studies">
+    <h2>Case Studies</h2>
+    <p>Explore successful e-waste recycling programs and best practices from around the world.</p>
+</section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>Your Dashboard</h2>
+        <div class="dashboard">
+            <h3>Total E-Waste Contributed: <span id="wasteCount">0</span> kg</h3>
+            <h3>Total Rewards Earned: <span id="rewardPoints">0</span> Points</h3>
+            <button onclick="addWaste()">Add E-Waste</button>
+            <button onclick="redeemRewards()">Redeem Rewards</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="handleContactForm(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Pickup Form (Modal) -->
+    <div id="pickupForm" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h2>Schedule E-Waste Pickup</h2>
+            <form id="pickupRequestForm" onsubmit="handlePickupForm(event)">
+                <label for="address">Pickup Address:</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+                
+                <label for="date">Pickup Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="wasteAmount">Amount of E-Waste (kg):</label>
+                <input type="number" id="wasteAmount" min="1" required>
+
+                <button type="submit">Schedule Pickup</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 E-Waste Management. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

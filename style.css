@@ -1,0 +1,303 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1c1c1c; /* Slightly lighter dark background */
+    color: #e0e0e0; /* Light text color for contrast */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #1b1b1b, #4CAF50); /* Darker gradient background for header */
+    color: white;
+    /*padding: 20px 0;*/
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s, transform 0.3s;
+}
+.header-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between logos and title */
+}
+
+.logo {
+    height: 150px; /* Set a height for the logos */
+    width: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+    flex-grow: 1; /* Allow the title to take up available space */
+    text-align: center; /* Center the title */
+    color: white; /* Change title color if necessary */
+    margin: 0; /* Remove default margin */
+}
+
+header:hover {
+    background: linear-gradient(to right, #4CAF50, #1b5e20); /* Darker gradient on hover */
+    transform: translateY(-3px);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4d4d4;
+    transform: scale(1.1);
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #2a2a2a; /* Darker background for sections */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+h2 {
+    color: #4CAF50; /* Lighter green for headings */
+    margin-bottom: 20px;
+}
+
+/* Feature and Dashboard Styles */
+.feature, .dashboard {
+    background-color: #3c3c3c; /* Medium dark background for feature and dashboard cards */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styles */
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50; /* Green background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth button transitions */
+    width: 150px; /* Set smaller uniform width */
+    height: 40px; /* Set smaller uniform height */
+    font-size: 14px; /* Adjust font size */
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+/* For specific buttons, if needed */
+#startNowButton,
+#scheduleButton {
+    width: 150px; /* Apply same width */
+    height: 40px; /* Apply same height */
+    font-size: 14px; /* Adjust text size */
+}
+
+
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #666; /* Slightly lighter border color */
+    border-radius: 5px;
+    background-color: #444; /* Dark background for inputs */
+    color: #e0e0e0; /* Light text color for inputs */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker modal background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #2a2a2a; /* Dark background for modal */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+/* Collapsible Section Styles */
+.collapsible {
+    background-color: #3c3c3c; /* Medium dark background for collapsible sections */
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.collapsible-header {
+    cursor: pointer; /* Pointer cursor for clickable headers */
+    padding: 15px;
+    font-size: 1.2em;
+    color: #4CAF50; /* Green text for headers */
+    border-bottom: 1px solid #666; /* Divider for headers */
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.collapsible-header:hover {
+    background-color: #4CAF50; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.collapsible-content {
+    display: none; /* Initially hidden content */
+    padding: 15px;
+    background-color: #2a2a2a; /* Dark background for content */
+    border-top: 1px solid #666; /* Divider for content */
+}
+
+/* Section Styles with Hover Effect */
+section {
+    padding: 40px;
+    text-align: center;
+    background-color: #2a2a2a; /* Darker background for sections */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover Effect */
+section:hover {
+    transform: translateY(-10px); /* Move section up by 10px */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7); /* Enhance the shadow for a lifted look */
+}
+s
+
+h2 {
+    color: #4CAF50; /* Lighter green for headings */
+    margin-bottom: 20px;
+}
+
+/* PDF Section Styles */
+#pdfContent {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+}
+
+.collapsible-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.collapsible-header:hover {
+    background-color: #45a049;
+}
+
+/* Style for subheadings in the About section */
+#about h3 {
+    font-size: 1.5rem; /* Increase font size */
+    color: #2c3e50; /* Change text color */
+    border-bottom: 2px solid #3498db; /* Add a bottom border */
+    padding-bottom: 5px; /* Add space below the text */
+    margin-top: 20px; /* Add space above the text */
+}
+
+/* Optional: Add some spacing for paragraphs */
+#about p {
+    margin-bottom: 15px; /* Add spacing between paragraphs */
+}
