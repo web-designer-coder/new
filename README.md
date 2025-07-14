@@ -1,4 +1,5 @@
 🌍 E-Waste Management System – Responsive Web UI
+
 A fully responsive and interactive frontend-only web platform that promotes sustainable e-waste management. This project raises awareness and encourages responsible electronic waste disposal through an engaging, informative, and reward-driven interface.
 
 🧠 Overview
@@ -99,4 +100,5 @@ Test the interface by:
 📲 Convert into a PWA (Progressive Web App)
 
 📃 License
+
 This project is released under the MIT License – feel free to use, modify, and share.
